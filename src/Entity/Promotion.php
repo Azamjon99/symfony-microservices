@@ -30,6 +30,7 @@ class Promotion
     #[ORM\OneToMany(mappedBy: 'promotion', targetEntity: ProductPromotion::class)]
     private Collection $productPromotions;
 
+
     public function __construct()
     {
         $this->productPromotions = new ArrayCollection();
